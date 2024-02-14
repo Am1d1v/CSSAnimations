@@ -34,50 +34,62 @@
 
 
     // Loading Text Animation
-body
-    display: flex
-    justify-content: center
-    align-items: center
-    min-height: 100vh  
-    background-color: #ffffff
+// body
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     min-height: 100vh  
+//     background-color: #ffffff
 
-ul
-    margin: 0
-    padding: 0
-    display: flex
-    li
-        list-style-type: none
-        font-size: 90px
-        letter-spacing: 20px
-        animation: loading 3s linear infinite
-        &:nth-child(1)
-            animation-delay: 0s
-        &:nth-child(2)
-            animation-delay: 0.2s
-        &:nth-child(3)
-            animation-delay: 0.4s
-        &:nth-child(4)
-            animation-delay: 0.6s
-        &:nth-child(5)
-            animation-delay: 0.8s
-        &:nth-child(6)
-            animation-delay: 1s
-        &:nth-child(7)
-            animation-delay: 1.2s
+// ul
+//     margin: 0
+//     padding: 0
+//     display: flex
+//     li
+//         list-style-type: none
+//         font-size: 90px
+//         letter-spacing: 20px
+//         animation: loading 3s linear infinite
+//         &:nth-child(1)
+//             animation-delay: 0s
+//         &:nth-child(2)
+//             animation-delay: 0.2s
+//         &:nth-child(3)
+//             animation-delay: 0.4s
+//         &:nth-child(4)
+//             animation-delay: 0.6s
+//         &:nth-child(5)
+//             animation-delay: 0.8s
+//         &:nth-child(6)
+//             animation-delay: 1s
+//         &:nth-child(7)
+//             animation-delay: 1.2s
             
 
-@keyframes loading 
-    0%
-        color: red   
-        transform: translateX(-50px)    
-        letter-spacing: 20px
-        opacity: 0
-    10%
-        opacity: 1    
-    50%
-        letter-spacing: -20px    
-    100%
-        color: blue   
-        transform: translateX(50px)
-        letter-spacing: 20px
-        opacity: 0
+// @keyframes loading 
+//     0%
+//         color: red   
+//         transform: translateX(-50px)    
+//         letter-spacing: 20px
+//         opacity: 0
+//     10%
+//         opacity: 1    
+//     50%
+//         letter-spacing: -20px    
+//     100%
+//         color: blue   
+//         transform: translateX(50px)
+//         letter-spacing: 20px
+//         opacity: 0
+
+
+    // Rain Effect 
+body
+    height: 100vh
+    background: url('https://media.istockphoto.com/id/1406584450/photo/dark-fantasy-medieval-castle-in-rocky-landscape-by-a-lake-with-moody-grey-clouds-3d-rendering.webp?b=1&s=170667a&w=0&k=20&c=GbreOUNzfPvj5Hl5LeeisngglnmUp2KZX-uTzHnV_z4=')      
+    background-repeat: no-repeat
+    background-size: cover
+
+.rain
+    height: 100%
+    background: url(../assets/rain.png)
