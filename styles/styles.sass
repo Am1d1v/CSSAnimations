@@ -41,4 +41,24 @@ body
     min-height: 100vh  
     background-color: #ffffff
 
-            
+ul
+    margin: 0
+    padding: 0
+    display: flex
+    li
+        list-style-type: none
+        font-size: 90px
+        letter-spacing: 20px
+        animation: loading 3s linear infinite
+
+@keyframes loading 
+    0%
+        color: red   
+        transform: translateX(-50px)    
+        letter-spacing: 20px
+    50%
+        letter-spacing: -20px    
+    100%
+        color: blue   
+        transform: translateX(50px)
+        letter-spacing: 20px
