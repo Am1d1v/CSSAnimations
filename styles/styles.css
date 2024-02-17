@@ -10,4 +10,31 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #000;
+}
+
+a {
+  font-size: 60px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #5c59ff;
+  border: 3px solid #5c59ff;
+  animation: shake 0.3s linear 1;
+}
+
+@keyframes shake {
+  33% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
