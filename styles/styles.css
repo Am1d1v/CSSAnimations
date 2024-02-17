@@ -9,27 +9,5 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #ffffff;
-}
-
-h1 {
-  font-size: 60px;
-}
-
-span::before {
-  content: "Morning";
-  color: #3b84d6;
-  animation: word-switch 4s linear infinite;
-}
-
-@keyframes word-switch {
-  0% {
-    content: "Morning";
-  }
-  50% {
-    content: "Day";
-  }
-  100% {
-    content: "Night";
-  }
+  background-color: #000;
 }/*# sourceMappingURL=styles.css.map */
