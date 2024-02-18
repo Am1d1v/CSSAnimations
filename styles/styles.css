@@ -12,35 +12,12 @@ body {
   background-color: #303030;
 }
 
-h1 {
-  color: #fff;
-  font-size: 45px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  position: relative;
-}
-h1::before {
-  content: "loading...";
-  position: absolute;
-  font-size: 45px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #eeea0e;
-  overflow: hidden;
-  border-right: 3px solid #eeea0e;
-  animation: reveal 2s linear infinite;
+.loading {
+  display: flex;
 }
 
-@keyframes reveal {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
+.obj {
+  width: 6px;
+  height: 30px;
+  background-color: #fff;
 }/*# sourceMappingURL=styles.css.map */
