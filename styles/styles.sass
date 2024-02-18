@@ -244,4 +244,29 @@ body
     min-height: 100vh  
     background-color: #303030
     
+h1
+    color: #fff
+    font-size: 45px
+    font-family: sans-serif
+    text-transform: uppercase
+    letter-spacing: 5px
+    position: relative
+    &::before
+        content: 'loading...'
+        position: absolute
+        font-size: 45px
+        top: 0
+        left: 0
+        width: 100%
+        color: #eeea0e
+        overflow: hidden
+        border-right: 3px solid #eeea0e
+        animation: reveal 2s linear infinite
 
+@keyframes reveal
+    0%
+        width: 0
+    50%
+        width: 100%
+    100%
+        width: 0        
