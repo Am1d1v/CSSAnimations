@@ -336,6 +336,15 @@ a
         background: #03e9f4
         color: #051130
         box-shadow: 0 0 6px #03e9f4, 0 0 30px #03e9f4, 0 0 60px #03e9f4, 0 0 180px #03e9f4
+        span
+            &:nth-child(1)
+                background: linear-gradient(90deg, transparent, #051330)
+            &:nth-child(2)
+                background: linear-gradient(90deg, transparent, #051330)
+            &:nth-child(3)
+                background: linear-gradient(90deg, transparent, #051330)
+            &:nth-child(4)
+                background: linear-gradient(90deg, transparent, #051330)
     span
         &:nth-child(1)
             position: absolute
@@ -345,7 +354,38 @@ a
             width: 100%
             height: 2px
             background: linear-gradient(90deg, transparent, #03e9f4)
-            animation: FirstSpanAnimation 1s linear infinite
+            animation: FirstSpanAnimation 1.5s linear infinite
+    span
+        &:nth-child(2)
+            position: absolute
+            display: block
+            top: -100%
+            right: 0
+            width: 2px
+            height: 100%
+            background: linear-gradient(90deg, transparent, #03e9f4)
+            animation: SecondSpanAnimation 1.5s linear infinite
+    span
+        &:nth-child(3)
+            position: absolute
+            display: block
+            bottom: 0
+            right: -100%
+            width: 100%
+            height: 2px
+            background: linear-gradient(90deg, transparent, #03e9f4)
+            animation: ThirdSpanAnimation  1.5s linear infinite 
+            transform: rotateZ(180deg)  
+    span
+        &:nth-child(4)
+            position: absolute
+            display: block
+            top: -100%
+            left: 0
+            width: 2px
+            height: 100%
+            background: linear-gradient(90deg, transparent, #03e9f4)
+            animation: FourthSpanAnimation 1.5s linear infinite             
 
             
 @keyframes FirstSpanAnimation 
@@ -353,6 +393,24 @@ a
         left: -100%
     50%, 100%
         left: 100%
+
+@keyframes SecondSpanAnimation 
+    0%
+        top: -100%
+    50%, 100%
+        top: 100%
+
+@keyframes ThirdSpanAnimation 
+    0%
+        right: -100%
+    50%, 100%
+        right: 100%
+
+@keyframes FourthSpanAnimation 
+    0%
+        top: 100%
+    50%, 100%
+        top: -100%
 
 
 
