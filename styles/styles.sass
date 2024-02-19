@@ -440,13 +440,25 @@ body
             border-radius: 0%
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
             transform: scale(0.6)
-            animation: triangleAnimation 3s linear infinite
+            animation: formAnimation 3s linear infinite
+        &:nth-child(3)
+            background: #321b9b
+            border-radius: 50%
+            transform: scale(0.6)
+            animation: formAnimation 3s linear infinite
+            animation-delay: -1.5s
             
 
-@keyframes triangleAnimation 
+@keyframes formAnimation 
     0%
         transform: translate(-150px, 50px) scale(0.3) rotate(0deg)
+        z-index: 1
     50%
         transform: translate(150px, -50px) scale(0.3) rotate(180deg)
+        z-index: 1
+    50.001%
+        transform: translate(150px, -50px) scale(0.3) rotate(180deg)
+        z-index: 3
     100%
         transform: translate(-150px, 50px) scale(0.3) rotate(360deg)
+        z-index: 3
