@@ -34,4 +34,18 @@ body {
   border-radius: 0%;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: scale(0.6);
+  animation: triangleAnimation 3s linear infinite;
+}
+
+@keyframes triangleAnimation {
+  0% {
+    transform: translate(-150px, 50px) scale(0.3) rotate(0deg);
+  }
+  50% {
+    transform: translate(150px, -50px) scale(0.3) rotate(180deg);
+  }
+  100% {
+    transform: translate(-150px, 50px) scale(0.3) rotate(360deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
