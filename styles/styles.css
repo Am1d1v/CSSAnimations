@@ -56,6 +56,7 @@ section {
   background: #de37ff;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  animation: liquidAnimation 3s linear infinite;
 }
 .liquid::before {
   content: "";
@@ -65,4 +66,16 @@ section {
   top: -10px;
   border-radius: 50%;
   background-color: #ba36d4;
+}
+
+@keyframes liquidAnimation {
+  0%, 20% {
+    top: 50px;
+  }
+  50%, 70% {
+    top: 320px;
+  }
+  100% {
+    top: 50px;
+  }
 }/*# sourceMappingURL=styles.css.map */
