@@ -577,8 +577,12 @@ section
             width: 50px
             height: 270px
             background-color: rgba(255, 255, 255, 0.1)
-            z-index: 3
-
+    &:nth-child(2) .liquid
+        background-color: #0d007e
+        animation-delay: 0.5s 
+        &::before
+            background-color: #08004e
+                    
 .liquid
     position: absolute
     top: 60px
@@ -596,7 +600,8 @@ section
         height: 20px
         top: -10px
         border-radius: 50%
-        background-color: #ba36d4     
+        background-color: #ba36d4   
+         
 
 @keyframes liquidAnimation
     0%, 20%
