@@ -541,12 +541,26 @@
 
 
     // Liquid Glass Animation
-body
+section
     display: flex
     justify-content: center
     align-items: center
     min-height: 100vh  
-    background-color: #001d30        
+    background-color: #222   
+    gap: 30px 
+
+.glass
+    position: relative       
+    & .inner
+        position: relative  
+        width: 200px
+        height: 400px
+        background: rgba(255, 255, 255, 0.1)
+        border-radius: 40px
+        border: 3px solid #fff
+
+        
+
 
 
 
