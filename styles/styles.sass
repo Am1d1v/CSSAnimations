@@ -557,9 +557,37 @@ section
         height: 400px
         background: rgba(255, 255, 255, 0.1)
         border-radius: 40px
-        border: 3px solid #fff
+        border: 3px solid transparent
+        &::before
+            content: ''
+            position: absolute
+            width: 180px
+            height: 30px
+            border: 10px solid #444
+            border-radius: 50%
+            left: 50%
+            top: -9px
+            transform: translateX(-50%)
+            box-shadow: 0 15px 0 #222
+        &::after
+            content: ''
+            position: absolute
+            top: 90px
+            left: 30px
+            width: 50px
+            height: 270px
+            background-color: rgba(255, 255, 255, 0.1)
+            z-index: 3
 
-        
+.liquid
+    position: absolute
+    top: 60px
+    left: 5px
+    right: 5px
+    bottom: 5px
+    background: #de37ff
+    border-bottom-left-radius: 30px        
+    border-bottom-right-radius: 30px        
 
 
 
