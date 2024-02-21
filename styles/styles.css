@@ -56,4 +56,13 @@ section {
   background: #de37ff;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+.liquid::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  top: -10px;
+  border-radius: 50%;
+  background-color: #ba36d4;
 }/*# sourceMappingURL=styles.css.map */
