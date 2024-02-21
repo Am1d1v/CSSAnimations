@@ -465,46 +465,51 @@
 
 
     // Glowing Loader
+// body
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     min-height: 100vh  
+//     background-color: #010f1f
+
+// .loader
+//     position: relative
+//     height: 120px
+//     width: 120px
+//     span
+//         position: absolute
+//         top: 0
+//         left: 0
+//         width: 100%
+//         height: 100%
+//         transform: rotate(calc(18deg * var(--i)))
+//         &::before
+//             content: ''
+//             position: absolute
+//             top: 0
+//             left: 0
+//             width: 15px
+//             height: 15px
+//             border-radius: 50%
+//             background: #e700fc
+//             box-shadow: 0 0 10px #e700fc, 0 0 20px #e700fc, 0 0 40px #e700fc, 0 0 60px #e700fc, 0 0 100px #e700fc
+//             animation: loaderScaleAnimation 1s linear infinite
+//             animation-delay: calc(0.3s * var(--i))
+    
+// @keyframes loaderScaleAnimation
+//     0%
+//         transform: scale(1)
+//     80%, 100%
+//         transform: scale(0)    
+        
+
+    // Rotating Glowing Loader
 body
     display: flex
     justify-content: center
     align-items: center
     min-height: 100vh  
     background-color: #010f1f
-
-.loader
-    position: relative
-    height: 120px
-    width: 120px
-    span
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        transform: rotate(calc(18deg * var(--i)))
-        &::before
-            content: ''
-            position: absolute
-            top: 0
-            left: 0
-            width: 15px
-            height: 15px
-            border-radius: 50%
-            background: #e700fc
-            box-shadow: 0 0 10px #e700fc, 0 0 20px #e700fc, 0 0 40px #e700fc, 0 0 60px #e700fc, 0 0 100px #e700fc
-            animation: loaderScaleAnimation 1.8s linear infinite
-            animation-delay: calc(0.1s * var(--i))
-    
-@keyframes loaderScaleAnimation
-    0%
-        transform: scale(1)
-    80%, 100%
-        transform: scale(0)    
-        
-
-
-
 
 
 
