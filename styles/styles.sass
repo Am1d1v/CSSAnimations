@@ -800,7 +800,7 @@ body
     justify-content: center
     align-items: center
     position: relative
-    &::before
+    &::before, &::after
         content: ''
         position: absolute
         left: -20px
@@ -810,8 +810,11 @@ body
         border: 3px solid #d15eff
         border-radius: 50%
         animation: pulseAnimation 1.5s linear infinite
+    &::after
+        animation-delay: 0.3s
     i
         font-size: 30px
+
 
 @keyframes pulseAnimation
     0%

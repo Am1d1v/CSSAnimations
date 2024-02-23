@@ -23,7 +23,7 @@ body {
   align-items: center;
   position: relative;
 }
-.pulse::before {
+.pulse::before, .pulse::after {
   content: "";
   position: absolute;
   left: -20px;
@@ -33,6 +33,9 @@ body {
   border: 3px solid #d15eff;
   border-radius: 50%;
   animation: pulseAnimation 1.5s linear infinite;
+}
+.pulse::after {
+  animation-delay: 0.3s;
 }
 .pulse i {
   font-size: 30px;
