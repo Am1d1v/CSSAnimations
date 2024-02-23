@@ -748,42 +748,47 @@
 
 
     // Rotating Ring Loader
+// body
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     height: 100vh  
+//     background-color: #fff
+
+// .container
+//     position: relative
+//     width: 200px
+//     height: 200px    
+//     & .ring
+//         width: 100%
+//         height: 100%
+//         border-left: 3px solid #262626
+//         border-radius: 50%
+//         animation:  ringAnimation 1.8s linear infinite
+//     & .text
+//         font-size: 25px
+//         position: absolute
+//         top: 0
+//         left: 0
+//         width: 100%
+//         height: 100%
+//         text-align: center
+//         line-height: 200px    
+
+// @keyframes ringAnimation
+//     0%
+//         transform: rotate(0deg)
+//     100%
+//         transform: rotate(360deg)
+
+
+    // Pulse Effect
 body
     display: flex
     justify-content: center
     align-items: center
     height: 100vh  
-    background-color: #fff
-
-.container
-    position: relative
-    width: 200px
-    height: 200px    
-    & .ring
-        width: 100%
-        height: 100%
-        border-left: 3px solid #262626
-        border-radius: 50%
-        animation:  ringAnimation 1.8s linear infinite
-    & .text
-        font-size: 25px
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        text-align: center
-        line-height: 200px    
-
-@keyframes ringAnimation
-    0%
-        transform: rotate(0deg)
-    100%
-        transform: rotate(360deg)
-
-
-
-
+    background-color: #333
 
 
 
