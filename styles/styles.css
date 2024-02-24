@@ -40,34 +40,51 @@ body {
   height: 30px;
   border: 3px solid #b6b6b6;
   z-index: 0;
+  animation: boxesAnimation 6s linear infinite;
 }
 .container .box:nth-child(2) {
   top: 60%;
   left: 30%;
   width: 90px;
   height: 90px;
+  animation-delay: 0.3s;
 }
 .container .box:nth-child(3) {
   top: 50%;
   left: 90%;
   width: 30px;
   height: 30px;
+  animation-delay: 0.45s;
 }
 .container .box:nth-child(4) {
   top: 10%;
   left: 30%;
   width: 20px;
   height: 20px;
+  animation-delay: 0.6s;
 }
 .container .box:nth-child(5) {
   top: 80%;
   left: 10%;
   width: 50px;
   height: 50px;
+  animation-delay: 0.75s;
 }
 .container .box:nth-child(6) {
   top: 90%;
   left: 50%;
   width: 60px;
   height: 60px;
+  animation-delay: 0.9s;
+}
+
+@keyframes boxesAnimation {
+  0% {
+    transform: scale(0.6) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(9) rotate(90deg);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
