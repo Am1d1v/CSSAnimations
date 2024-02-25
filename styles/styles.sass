@@ -919,14 +919,36 @@ body
     justify-content: center
     align-items: center    
     h2
-        font-size: 45px
+        font-size: 80px
         font-family: sans-serif
         font-weight: 600
         letter-spacing: 5px
         color: #fff
         text-shadow: 0 0 10px #00b3ff, 0 0 30px #00b3ff, 0 0 60px #00b3ff,0 0 90px #00b3ff, 0 0 120px #00b3ff
+    & .lightbar
+        position: absolute
+        top: 0
+        left: 0  
+        width: 10px
+        height: 100%
+        background-color: #fff  
+        border-radius: 10px
+        box-shadow: 0 0 10px #00b3ff, 0 0 30px #00b3ff, 0 0 60px #00b3ff,0 0 90px #00b3ff, 0 0 120px #00b3ff
+        transform-origin: center
+        animation: lightbarAnimation 3s linear infinite
 
+@keyframes lightbarAnimation
+    0%
+        transform: scaleY(0) translateX(0)
+    10%
+        transform: scaleY(1) translateX(0)
+    90%
+        transform: scaleY(1) translateX(600px)
+    100%
+        transform: scaleY(0) translateX(600px)
+        
 
+            
 
 
 
