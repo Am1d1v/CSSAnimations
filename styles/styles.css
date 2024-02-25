@@ -31,33 +31,34 @@ body {
 .box .lightbar {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -10px;
   width: 10px;
   height: 100%;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px #00b3ff, 0 0 30px #00b3ff, 0 0 60px #00b3ff, 0 0 90px #00b3ff, 0 0 120px #00b3ff;
+  box-shadow: 0 0 10px #00b3ff, 0 0 30px #00b3ff, 0 0 60px #00b3ff, 0 0 90px #00b3ff;
   transform-origin: center;
-  animation: lightbarAnimation 3s linear infinite;
+  animation: lightbarAnimation 6s linear infinite;
+  z-index: 2;
 }
 .box .toplayer {
   position: absolute;
   top: -50%;
   left: 0;
   width: 100%;
-  height: 300px;
-  background: red;
-  animation: toplayerAnimation 3s linear infinite;
+  height: 450px;
+  background: #061b31;
+  animation: toplayerAnimation 6s linear infinite;
 }
 
 @keyframes lightbarAnimation {
   0% {
     transform: scaleY(0) translateX(0);
   }
-  10% {
+  1% {
     transform: scaleY(1) translateX(0);
   }
-  90% {
+  99% {
     transform: scaleY(1) translateX(600px);
   }
   100% {
@@ -65,16 +66,10 @@ body {
   }
 }
 @keyframes toplayerAnimation {
-  5% {
+  1% {
     transform: translateX(0);
   }
-  45%, 50% {
+  99% {
     transform: translateX(100%);
-  }
-  50.0001%, 55% {
-    transform: translateX(-100%);
-  }
-  95% {
-    transform: translateX(0);
   }
 }/*# sourceMappingURL=styles.css.map */
