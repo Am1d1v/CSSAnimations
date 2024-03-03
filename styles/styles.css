@@ -9,67 +9,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #061b31;
+  background-color: #222222;
+  font-family: serif;
 }
 
-.box {
-  position: relative;
-  width: 600px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box h2 {
-  font-size: 80px;
-  font-family: sans-serif;
-  font-weight: 600;
-  letter-spacing: 5px;
+a {
+  text-decoration: none;
   color: #fff;
-  text-shadow: 0 0 10px #00b3ff, 0 0 30px #00b3ff, 0 0 60px #00b3ff, 0 0 90px #00b3ff, 0 0 120px #00b3ff;
-}
-.box .lightbar {
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 10px;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00b3ff, 0 0 30px #00b3ff, 0 0 60px #00b3ff, 0 0 90px #00b3ff;
-  transform-origin: center;
-  animation: lightbarAnimation 6s linear infinite;
-  z-index: 2;
-}
-.box .toplayer {
-  position: absolute;
-  top: -50%;
-  left: 0;
-  width: 100%;
-  height: 450px;
-  background: #061b31;
-  animation: toplayerAnimation 6s linear infinite;
-}
-
-@keyframes lightbarAnimation {
-  0% {
-    transform: scaleY(0) translateX(0);
-  }
-  1% {
-    transform: scaleY(1) translateX(0);
-  }
-  99% {
-    transform: scaleY(1) translateX(600px);
-  }
-  100% {
-    transform: scaleY(0) translateX(600px);
-  }
-}
-@keyframes toplayerAnimation {
-  1% {
-    transform: translateX(0);
-  }
-  99% {
-    transform: translateX(100%);
-  }
 }/*# sourceMappingURL=styles.css.map */
